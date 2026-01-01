@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Menghubungkan ke file CSS utama -->
+  <link rel="stylesheet" href="../static/css/style.css" />
+  <title>Portfolio - My Skills</title>
+  <!-- INTERNAL STYLE DIHAPUS agar tidak bentrok dengan style.css -->
+</head>
+
+<body>
+  <!-- Navigasi Desktop -->
+  <header class="header">
+    <nav class="header__nav main-nav">
+      <ul class="main-nav__list main-list">
+        <li class="main-list__item list-item">
+          <a class="list-item__link" href="../index.html">HOME</a>
+        </li>
+        <li class="main-list__item list-item">
+          <a class="list-item__link" href="about.html">ABOUT</a>
+        </li>
+        <li class="main-list__item list-item">
+          <a class="list-item__link" href="skil.html">MY SKILLS</a>
+        </li>
+        <li class="main-list__item list-item">
+          <a class="list-item__link" href="certificate.html">CERTIFICATE</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Navigasi Mobile (HP) -->
+  <header class="header-responsive">
+    <div class="responsive">
+      <nav class="header__nav main-nav">
+        <button type="button" id="btnBurger">
+          <img src="../static/img/hamburger menu.png" alt="Menu">
+        </button>
+      </nav>
+    </div>
+    <div class="nav-list-res" id="navListRes">
+      <a class="res__link" href="../index.html">HOME</a>
+      <a class="res__link" href="about.html">ABOUT</a>
+      <a class="res__link" href="skil.html">MY SKILLS</a>
+      <a class="res__link" href="certificate.html">CERTIFICATE</a>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main class="main">
+    <!-- Bagian Keterampilan (Skills) -->
+    <!-- 'animate-on-scroll' untuk efek animasi muncul saat di-scroll -->
+    <section class="main__skills skills animate-on-scroll" id="skills">
+      <h2 class="skills__title">MY SKILLS</h2>
+
+      <!-- Daftar Skil -->
+      <ul class="skills__list skills-list">
+
+        <!-- Kartu 1: Arduino -->
+        <li class="skills-list__skill skill">
+          <img class="skill__img" src="../static/img/arduino.png" alt="Arduino" />
+          <span class="skill__info">Arduino</span>
+          <a href="https://github.com/WEN0APTA29/arduino-weno">
+            <input class="skill__button" type="button" value="SHOW PROJECT" />
+          </a>
+        </li>
+
+        <!-- Kartu 2: Python -->
+        <li class="skills-list__skill skill">
+          <img class="skill__img" src="../static/img/python.png" alt="Python" />
+          <span class="skill__info">Python</span>
+          <a href="https://github.com/WEN0APTA29/Kode-lagu-Python-Weno">
+            <input class="skill__button" type="button" value="SHOW PROJECT" />
+          </a>
+        </li>
+
+        <!-- Kartu 3: Roblox (Perbaikan: Alt teks dan info diperjelas) -->
+        <li class="skills-list__skill skill">
+          <img class="skill__img" src="../static/img/roblox studio.png" alt="Roblox Studio" />
+          <span class="skill__info">Roblox</span>
+          <a href="https://www.roblox.com/games/17455422407/Pik2">
+            <input class="skill__button" type="button" value="SHOW PROJECT" />
+          </a>
+        </li>
+
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Weno Apta 2024</p>
+  </footer>
+
+  <!-- Script Javascript untuk Interaksi -->
+  <script src="../static/js/script.js"></script>
+  <script src="../static/js/navbar.js"></script>
+</body>
+
+</html>
